@@ -25,5 +25,6 @@ public class basicTest {
 			ans2 = scan.next();
 		}
 		System.out.println("very good");
+		scan.close();
 	}
 }

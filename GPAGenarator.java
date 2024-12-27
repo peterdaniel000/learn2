@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class GPAGenarator {
     public static void main(String[] args) {
-        System.out.println("How many courses do you have this semester?");
+        System.out.println("How many courses do you offer this semester?");
         Scanner scan = new Scanner(System.in);
         int x = scan.nextInt();
 
@@ -37,5 +37,6 @@ public class GPAGenarator {
         }
 
         System.out.println("Your average is "+ average);
+        scan.close();
     }
 }

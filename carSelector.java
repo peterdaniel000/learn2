@@ -27,9 +27,11 @@ public class carSelector {
 
             if (ans2.equals("red")) {
                 System.out.println("We have it in stock, let go check it out ,which one do you like");
+                scan1.close();
 
                     Scanner scan2 = new Scanner(System.in);
                     String ans3 = scan.next();
+                    scan2.close();
 
                     if (ans3.equals("stripe")) {
                         System.out.println("sold!!!!");
@@ -46,5 +48,6 @@ public class carSelector {
         } else {
             System.out.println("thank for you patronage");
         }
+        scan.close();
     }
 }
