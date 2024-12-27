@@ -1,22 +1,22 @@
 package javaAdvance;
 
-class Node{
-    int Data;
-    Node next;
+class linkedList{
+    String Data;
+    linkedList next;
 
-    public Node(int Data){
+    public linkedList(String Data){
     }
 
 
-public class linkedList{
-    Node Head;
-    Node Tail;
+public class Node{
+    linkedList Head;
+    linkedList Tail;
 
-    public linkedList() {
+    public Node() {
     }
 
-        public void prepend(int Data){
-            Node newNode = new Node(Data);
+        public void prepend(String Data){
+            linkedList newNode = new linkedList(Data);
             if (Head == null){
                 Head = newNode;
                 Tail = newNode;
@@ -26,8 +26,8 @@ public class linkedList{
             Head = newNode;
         }
 
-        public void append(int Data){
-            Node newNode = new Node(Data);
+        public void append(String Data){
+            linkedList newNode = new linkedList(Data);
             if (Head == null){
                 Head = newNode;
                 Tail = newNode;
@@ -38,7 +38,7 @@ public class linkedList{
         
     }
     public void printList(){
-        Node current = Head;
+        linkedList current = Head;
         while (current != null){
             System.out.print(current.Data + " ");
             current = current.next;
@@ -46,7 +46,7 @@ public class linkedList{
         System.out.println();
     }
 
-    public void remove(int Data){
+    public void remove(String Data){
         if (Head == null){
             return;
         }
@@ -59,7 +59,7 @@ public class linkedList{
             return;
         }
     
-    Node current = Head;
+    linkedList current = Head;
     while (current.next != null){
         if (current.next.Data == Data){
             current.next = current.next.next;
