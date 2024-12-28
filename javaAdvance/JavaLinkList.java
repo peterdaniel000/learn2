@@ -11,6 +11,8 @@ public class JavaLinkList {
         linkedList.add("pearl");
 
         linkedList.addFirst("mango");
+        linkedList.reversed();
+        System.out.println(linkedList);
 
         linkedList.remove("orange");
         linkedList.removeFirst();
