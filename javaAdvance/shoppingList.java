@@ -9,7 +9,7 @@ public class shoppingList {
         this.items = new linkedList(null);
     }
 
-    public void addItem(String itemName){
+    public shoppingList addItem(shoppingList itemName){
         this.items.append(itemName);
     }
 
