@@ -10,7 +10,7 @@ public class kidsGreatestCandies {
      *                 maxCandies = Math.max(maxCandies, candy);
      *             }
      *          for(int candy: candies){
-     *                  result.add(candy + extraCandies => maxCandies);
+     *                  result.add(candy + extraCandies >= maxCandies);
      *             }
      *          return result,
      *      }
