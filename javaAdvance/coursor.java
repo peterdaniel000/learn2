@@ -1,6 +1,6 @@
 package javaAdvance;
 
-public class coursor extends doublyLinklist{
+public class coursor extends DoublyLinkedList{
     private Node cursor;
 
     public coursor(){
@@ -39,9 +39,10 @@ public class coursor extends doublyLinklist{
         if (cursor == null){
             cursor = tail;
         }
+    }
 
     @Override
-    public void prepend(int data){
+    public void prepend(int data) {
         super.prepend(data);
         if (cursor == null){
             cursor = head;
@@ -49,7 +50,7 @@ public class coursor extends doublyLinklist{
     }
 
 
-    }
+    
     public static void main(String[] args){
         coursor list = new coursor();
 

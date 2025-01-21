@@ -10,11 +10,12 @@ class Node{
         this.prev = null;
         this.next = null;
     }
+}
 
 
 class DoublyLinkedList{
-    private Node head;
-    private Node tail;
+    protected Node head;
+    protected Node tail;
 
     public DoublyLinkedList(){
         this.head = null;
@@ -32,7 +33,7 @@ public void append(int data){
         newNode.prev = tail;
         tail = newNode;
             }
-        }
+    }
 
         public void prepend(int data){
             Node newNode = new Node(data);
@@ -76,7 +77,7 @@ public void append(int data){
         }
 
     }
-}
+
 
 
 
