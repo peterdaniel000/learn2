@@ -1,16 +1,15 @@
 package javaAdvance;
 
-import javaAdvance.linkedList;
 
-public class shoppingList {
-    linkedList items;
+public class shoppingList{
+    Node items;
 
     public shoppingList(){
-        this.items = new linkedList(null);
+        this.items = null;
     }
 
     public shoppingList addItem(shoppingList itemName){
-        this.items.append(itemName);
+        items.append(itemName);
     }
 
     public void removeItem(String itemName){
