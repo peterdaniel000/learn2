@@ -2,8 +2,7 @@ package queue;
 
 import java.util.NoSuchElementException;
 
-public class queue {
-    public class Queue<T>{
+    public class queue<T>{
         private static class Node<T>{
             private T data;
             private Node<T> next;
@@ -48,5 +47,4 @@ public class queue {
         size--;
         return data;
     }
-}
 }
