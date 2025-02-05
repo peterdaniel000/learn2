@@ -14,11 +14,12 @@ public class Setimpl {
 
         System.out.println(set);
         
-        set.contains("Apple");
+        
         System.out.println(set.contains("Apple"));
         System.out.println(set.size());
         set.clear();
         System.out.println(set);
+
 
 
     }
