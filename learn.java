@@ -23,6 +23,9 @@ class learn{
             System.out.println("F");
         }
 
+        scan.close();
+        
+
 
     }
 }
