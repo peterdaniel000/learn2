@@ -1,7 +1,8 @@
 package javaAdvance;
 
+import javaAdvance.Node.linkedList;
 
-public class shoppingList{
+public class shoppingList extends linkedList{
     Node items;
 
     public shoppingList(){

@@ -77,8 +77,3 @@ public void append(int data){
         }
 
     }
-
-
-
-
-
