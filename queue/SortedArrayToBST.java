@@ -4,9 +4,9 @@ public class SortedArrayToBST {
     /*
      * public class solution{
      *      private TreeNode constructTree(int[] nums, int left, int right){
-     *          if (right < left || right < 0) return null;
+     *          if (right < left || right < 0 || left >= nums.length) return null;
      *          int mid = (left + right) / 2;
-     *          TreeNode = new TreeNode(nums[mid], construct(nums, left, mid - 1), constructTree(nums, mid - 1, right));
+     *          TreeNode root = new TreeNode(nums[mid], constructTree(nums, left, mid - 1), constructTree(nums, mid + 1, right));
      *          return root;
      *      }
      *      public TreeNodeSortedArrayToBST(int[] nums) {
