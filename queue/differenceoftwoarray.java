@@ -20,8 +20,11 @@ public class differenceoftwoarray {
         return new ArrayList<>(num1Numbers);
     }
 
-    public List<List<Integer>> finddifferences(int nums1, int nums2){
-        return Arrays.asList(getInFirstNotSecond(nums1, nums2)), Arrays.asList(getInFirstNotSecond(nums2,nums1));
+    public List<List<Integer>> finddifferences(int[] nums1, int[] nums2){
+        return Arrays.asList (
+            getInFirstNotSecond(nums1, nums2),
+            getInFirstNotSecond(nums2,nums1)
+        );
 
     }
     
