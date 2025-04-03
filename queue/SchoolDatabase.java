@@ -34,7 +34,7 @@ public class SchoolDatabase {
             return;
         }
         studentIds.add(id);
-        System.out.println("Student "+ student.getName()+ " dded to the database");
+        System.out.println("Student "+ student.getName()+ " added to the database");
     }
     public static void main(String[] args){
         SchoolDatabase db = new SchoolDatabase();
