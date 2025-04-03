@@ -33,7 +33,7 @@ class randomlist{
         iteratorOriginalList = head;
         iteratorNewList = prehead;
 
-        while(iteratorNewList != null){
+        while(iteratorOriginalList != null){
             if (iteratorOriginalList != null){
                 Node newRandom = nodesMap.get(iteratorOriginalList.random);
                 iteratorNewList.next.random = newRandom;
