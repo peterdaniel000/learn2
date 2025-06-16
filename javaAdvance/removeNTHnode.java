@@ -11,7 +11,7 @@ public class removeNTHnode {
      *              right = right.next;   
      *          }
      * 
-     *          if (right == null) return null;
+     *          if (right == null) return head.next;
      * 
      *          
      *          while(right.next != null){
